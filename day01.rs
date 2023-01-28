@@ -3,7 +3,7 @@ use std::io::BufReader;
 use std::io::prelude::*;
 
 fn read_input() -> Vec<String> {
-  let file = File::open("../inputs/d1.txt").expect("No input.txt");
+  let file = File::open("inputs/day01.txt").expect("No input.txt");
   let buf = BufReader::new(file);
   buf.lines()
     .map(|l| l.expect("Could not parse line from input.txt"))

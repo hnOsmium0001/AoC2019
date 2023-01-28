@@ -1,7 +1,7 @@
 use std::fs;
 
 fn read_input() -> (u32, u32) {
-  let s = match fs::read_to_string("../inputs/d4.txt") {
+  let s = match fs::read_to_string("inputs/day04.txt") {
     Ok(res) => res,
     Err(_) => String::from(""),
   };

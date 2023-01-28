@@ -4,7 +4,7 @@ use std::io::prelude::*;
 use std::cmp;
 
 fn read_input() -> Vec<String> {
-  let file = File::open("../inputs/d3.txt").expect("No input.txt");
+  let file = File::open("inputs/day03.txt").expect("No input.txt");
   let buf = BufReader::new(file);
   buf.lines()
     .map(|l| l.expect("Could not parse line from input.txt"))

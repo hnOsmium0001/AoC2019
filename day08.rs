@@ -2,7 +2,7 @@ use std::fs;
 use std::convert::TryInto;
 
 fn read_input() -> String {
-  fs::read_to_string("../inputs/d8.txt").expect("Cannot find input.txt!")
+  fs::read_to_string("inputs/day08.txt").expect("Cannot find input.txt!")
 }
 
 const WIDTH: usize = 25;

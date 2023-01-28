@@ -9,7 +9,7 @@ struct Point {
 }
 
 fn read_asteroids() -> (Vec<Vec<char>>, Vec<Point>, i32, i32) {
-  let file = File::open("../inputs/d10.txt").expect("No input.txt");
+  let file = File::open("inputs/day10.txt").expect("No input.txt");
   let buf = BufReader::new(file);
   let lines: Vec<Vec<char>> = buf.lines()
     .map(|l| l.expect("Could not parse line from input.txt"))

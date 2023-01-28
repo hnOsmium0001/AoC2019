@@ -5,7 +5,7 @@ use std::collections::HashMap;
 use std::collections::hash_map::Entry;
 
 fn read_input() -> Vec<String> {
-  let file = File::open("../inputs/d6.txt").expect("No input.txt");
+  let file = File::open("inputs/day06.txt").expect("No input.txt");
   let buf = BufReader::new(file);
   buf.lines()
     .map(|l| l.expect("Could not parse line from input.txt"))

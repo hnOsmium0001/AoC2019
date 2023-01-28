@@ -23,7 +23,7 @@ const HALT_INS: i64 = 99;
 const HALT_SIZE: usize = 1; 
 
 fn read_input() -> Vec<i64> {
-  let input = fs::read_to_string("../inputs/d9.txt").expect("No input.txt found");
+  let input = fs::read_to_string("inputs/day09.txt").expect("No input.txt found");
   input.split(",")
     .map(|op| op.parse::<i64>().unwrap())
     .collect()

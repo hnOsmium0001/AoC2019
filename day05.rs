@@ -21,7 +21,7 @@ const HALT_INS: i32 = 99;
 const HALT_SIZE: usize = 1; 
 
 fn read_input() -> Vec<i32> {
-  let input = fs::read_to_string("../inputs/d5.txt").expect("No input.txt found");
+  let input = fs::read_to_string("inputs/day05.txt").expect("No input.txt found");
   input.split(",")
     .map(|op| op.parse::<i32>().unwrap())
     .collect()

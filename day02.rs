@@ -5,7 +5,7 @@ const MULT: usize = 2;
 const HALT: usize = 99;
 
 fn read_input() -> Vec<usize> {
-  let input = fs::read_to_string("../inputs/d2.txt").expect("No input.txt found");
+  let input = fs::read_to_string("inputs/day02.txt").expect("No input.txt found");
   input.split(",")
     .map(|op| op.parse::<usize>().unwrap())
     .collect()
