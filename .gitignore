@@ -1,2 +1,6 @@
+inputs/
+.local/
+.idea/
+
 /target
 **/*.rs.bk
